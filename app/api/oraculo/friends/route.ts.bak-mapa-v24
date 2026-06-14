@@ -1,0 +1,48 @@
+import { NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { acceptFriend, listFriendLinks, removeFriend, requestFriend } from "@/lib/oraculo-friends";
+
+export const dynamic = "force-dynamic";
+
+function validSteamId(value: unknown): value is string {
+  return typeof value === "string" && /^765\d{14}$/.test(value);
+}
+
+async function viewerSteamId() {
+  const cookieStore = await cookies();
+  return cookieStore.get("oraculo_steam_id")?.value || null;
+}
+
+export async function GET() {
+  const viewer = await viewerSteamId();
+  if (!validSteamId(viewer)) {
+    return NextResponse.json({ ok: false, error: "Steam no conectado", friends: [] }, { status: 401 });
+  }
+
+  return NextResponse.json({ ok: true, friends: listFriendLinks(viewer) });
+}
+
+export async function POST(request: NextRequest) {
+  const viewer = await viewerSteamId();
+  if (!validSteamId(viewer)) {
+    return NextResponse.json({ ok: false, error: "Steam no conectado", friends: [] }, { status: 401 });
+  }
+
+  const body = await request.json().catch(() => ({}));
+  const steamId = typeof body.steamId === "string" ? body.steamId.trim() : "";
+  const action = typeof body.action === "string" ? body.action : "request";
+
+  if (!validSteamId(steamId)) {
+    return NextResponse.json({ ok: false, error: "SteamID64 invalido", friends: listFriendLinks(viewer) }, { status: 400 });
+  }
+
+  if (action === "accept") {
+    return NextResponse.json({ ok: true, friends: acceptFriend(viewer, steamId) });
+  }
+
+  if (action === "remove") {
+    return NextResponse.json({ ok: true, friends: removeFriend(viewer, steamId) });
+  }
+
+  return NextResponse.json({ ok: true, friends: requestFriend(viewer, steamId) });
+}

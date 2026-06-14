@@ -1,0 +1,1022 @@
+﻿[
+    {
+        "table":  "announcement_schedule",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "message",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "type",
+        "dataType":  "enum",
+        "ordinal":  3
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "time_value",
+        "dataType":  "time",
+        "ordinal":  4
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "interval_minutes",
+        "dataType":  "int",
+        "ordinal":  5
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "enabled",
+        "dataType":  "tinyint",
+        "ordinal":  6
+    },
+    {
+        "table":  "announcement_schedule",
+        "column":  "last_sent",
+        "dataType":  "datetime",
+        "ordinal":  7
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "type",
+        "dataType":  "enum",
+        "ordinal":  2
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "time_value",
+        "dataType":  "time",
+        "ordinal":  3
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "interval_minutes",
+        "dataType":  "int",
+        "ordinal":  4
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "warning_intervals",
+        "dataType":  "varchar",
+        "ordinal":  5
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "enabled",
+        "dataType":  "tinyint",
+        "ordinal":  6
+    },
+    {
+        "table":  "corpse_wipe_schedule",
+        "column":  "last_wiped",
+        "dataType":  "datetime",
+        "ordinal":  7
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "reward_name",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "reward_type",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "reward_value",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "chance_percent",
+        "dataType":  "float",
+        "ordinal":  5
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "tier",
+        "dataType":  "int",
+        "ordinal":  6
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "enabled",
+        "dataType":  "tinyint",
+        "ordinal":  7
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_species",
+        "dataType":  "varchar",
+        "ordinal":  8
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_growth",
+        "dataType":  "decimal",
+        "ordinal":  9
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_health_percent",
+        "dataType":  "decimal",
+        "ordinal":  10
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_is_prime_elder",
+        "dataType":  "tinyint",
+        "ordinal":  11
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_location_x",
+        "dataType":  "float",
+        "ordinal":  12
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_location_y",
+        "dataType":  "float",
+        "ordinal":  13
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "dino_location_z",
+        "dataType":  "float",
+        "ordinal":  14
+    },
+    {
+        "table":  "daily_spin_rewards",
+        "column":  "created_at",
+        "dataType":  "datetime",
+        "ordinal":  15
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "catalogue_id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "dino_species",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "growth",
+        "dataType":  "decimal",
+        "ordinal":  3
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "health_percent",
+        "dataType":  "decimal",
+        "ordinal":  4
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "is_prime_elder",
+        "dataType":  "tinyint",
+        "ordinal":  5
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "location_x",
+        "dataType":  "float",
+        "ordinal":  6
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "location_y",
+        "dataType":  "float",
+        "ordinal":  7
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "location_z",
+        "dataType":  "float",
+        "ordinal":  8
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "price",
+        "dataType":  "int",
+        "ordinal":  9
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "stock",
+        "dataType":  "int",
+        "ordinal":  10
+    },
+    {
+        "table":  "dinocatalogue",
+        "column":  "added_at",
+        "dataType":  "datetime",
+        "ordinal":  11
+    },
+    {
+        "table":  "idsync",
+        "column":  "player_id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "idsync",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "idsync",
+        "column":  "discord_id",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "idsync",
+        "column":  "discord_tag",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "save_id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "dino_species",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "growth",
+        "dataType":  "decimal",
+        "ordinal":  4
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "health_percent",
+        "dataType":  "decimal",
+        "ordinal":  5
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "is_prime_elder",
+        "dataType":  "tinyint",
+        "ordinal":  6
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "location_x",
+        "dataType":  "float",
+        "ordinal":  7
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "location_y",
+        "dataType":  "float",
+        "ordinal":  8
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "location_z",
+        "dataType":  "float",
+        "ordinal":  9
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "nickname",
+        "dataType":  "varchar",
+        "ordinal":  10
+    },
+    {
+        "table":  "parkeddinos",
+        "column":  "parked_at",
+        "dataType":  "datetime",
+        "ordinal":  11
+    },
+    {
+        "table":  "patreon_tiers",
+        "column":  "tier_number",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "patreon_tiers",
+        "column":  "nickname",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "patreon_tiers",
+        "column":  "discord_role_id",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "playercooldowns",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  1
+    },
+    {
+        "table":  "playercooldowns",
+        "column":  "action_type",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "playercooldowns",
+        "column":  "last_used",
+        "dataType":  "timestamp",
+        "ordinal":  3
+    },
+    {
+        "table":  "playersonline",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "playersonline",
+        "column":  "gamertag",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "playersonline",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "playersonline",
+        "column":  "species",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "playerstats",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  1
+    },
+    {
+        "table":  "playerstats",
+        "column":  "discord_id",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "playerstats",
+        "column":  "currency",
+        "dataType":  "int",
+        "ordinal":  3
+    },
+    {
+        "table":  "playerstats",
+        "column":  "alltime_currency",
+        "dataType":  "int",
+        "ordinal":  4
+    },
+    {
+        "table":  "playerstats",
+        "column":  "game_kicks",
+        "dataType":  "int",
+        "ordinal":  5
+    },
+    {
+        "table":  "playerstats",
+        "column":  "game_bans",
+        "dataType":  "int",
+        "ordinal":  6
+    },
+    {
+        "table":  "playerstats",
+        "column":  "discord_timeouts",
+        "dataType":  "int",
+        "ordinal":  7
+    },
+    {
+        "table":  "playerstats",
+        "column":  "discord_bans",
+        "dataType":  "int",
+        "ordinal":  8
+    },
+    {
+        "table":  "playerstats",
+        "column":  "server_login",
+        "dataType":  "int",
+        "ordinal":  9
+    },
+    {
+        "table":  "playerstats",
+        "column":  "daily_spins_used",
+        "dataType":  "int",
+        "ordinal":  10
+    },
+    {
+        "table":  "playerstats",
+        "column":  "dino_tokens",
+        "dataType":  "int",
+        "ordinal":  11
+    },
+    {
+        "table":  "playerstats",
+        "column":  "apex_tokens",
+        "dataType":  "int",
+        "ordinal":  12
+    },
+    {
+        "table":  "player_punishments",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  1
+    },
+    {
+        "table":  "player_punishments",
+        "column":  "discord_id",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "player_punishments",
+        "column":  "punishments",
+        "dataType":  "longtext",
+        "ordinal":  3
+    },
+    {
+        "table":  "player_punishments",
+        "column":  "updated_at",
+        "dataType":  "datetime",
+        "ordinal":  4
+    },
+    {
+        "table":  "player_skins",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "player_skins",
+        "column":  "steam_id",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "player_skins",
+        "column":  "skin_name",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "player_skins",
+        "column":  "skin_code",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "player_skins",
+        "column":  "male_display_r",
+        "dataType":  "float",
+        "ordinal":  5
+    },
+    {
+        "table":  "player_skins",
+        "column":  "male_display_g",
+        "dataType":  "float",
+        "ordinal":  6
+    },
+    {
+        "table":  "player_skins",
+        "column":  "male_display_b",
+        "dataType":  "float",
+        "ordinal":  7
+    },
+    {
+        "table":  "player_skins",
+        "column":  "markings_r",
+        "dataType":  "float",
+        "ordinal":  8
+    },
+    {
+        "table":  "player_skins",
+        "column":  "markings_g",
+        "dataType":  "float",
+        "ordinal":  9
+    },
+    {
+        "table":  "player_skins",
+        "column":  "markings_b",
+        "dataType":  "float",
+        "ordinal":  10
+    },
+    {
+        "table":  "player_skins",
+        "column":  "flank_r",
+        "dataType":  "float",
+        "ordinal":  11
+    },
+    {
+        "table":  "player_skins",
+        "column":  "flank_g",
+        "dataType":  "float",
+        "ordinal":  12
+    },
+    {
+        "table":  "player_skins",
+        "column":  "flank_b",
+        "dataType":  "float",
+        "ordinal":  13
+    },
+    {
+        "table":  "player_skins",
+        "column":  "body_r",
+        "dataType":  "float",
+        "ordinal":  14
+    },
+    {
+        "table":  "player_skins",
+        "column":  "body_g",
+        "dataType":  "float",
+        "ordinal":  15
+    },
+    {
+        "table":  "player_skins",
+        "column":  "body_b",
+        "dataType":  "float",
+        "ordinal":  16
+    },
+    {
+        "table":  "player_skins",
+        "column":  "underbelly_r",
+        "dataType":  "float",
+        "ordinal":  17
+    },
+    {
+        "table":  "player_skins",
+        "column":  "underbelly_g",
+        "dataType":  "float",
+        "ordinal":  18
+    },
+    {
+        "table":  "player_skins",
+        "column":  "underbelly_b",
+        "dataType":  "float",
+        "ordinal":  19
+    },
+    {
+        "table":  "player_skins",
+        "column":  "eyes_r",
+        "dataType":  "float",
+        "ordinal":  20
+    },
+    {
+        "table":  "player_skins",
+        "column":  "eyes_g",
+        "dataType":  "float",
+        "ordinal":  21
+    },
+    {
+        "table":  "player_skins",
+        "column":  "eyes_b",
+        "dataType":  "float",
+        "ordinal":  22
+    },
+    {
+        "table":  "player_skins",
+        "column":  "amount",
+        "dataType":  "int",
+        "ordinal":  23
+    },
+    {
+        "table":  "player_skins",
+        "column":  "infinite",
+        "dataType":  "tinyint",
+        "ordinal":  24
+    },
+    {
+        "table":  "player_skins",
+        "column":  "obtained_at",
+        "dataType":  "datetime",
+        "ordinal":  25
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "restart_time",
+        "dataType":  "time",
+        "ordinal":  2
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "player_threshold",
+        "dataType":  "int",
+        "ordinal":  3
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "warning_intervals",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "enabled",
+        "dataType":  "tinyint",
+        "ordinal":  5
+    },
+    {
+        "table":  "restart_schedule",
+        "column":  "was_skipped",
+        "dataType":  "tinyint",
+        "ordinal":  6
+    },
+    {
+        "table":  "serversettings",
+        "column":  "setting_name",
+        "dataType":  "varchar",
+        "ordinal":  1
+    },
+    {
+        "table":  "serversettings",
+        "column":  "setting_value",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "catalogue_id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "preset_name",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "skin_code",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "male_display_r",
+        "dataType":  "float",
+        "ordinal":  4
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "male_display_g",
+        "dataType":  "float",
+        "ordinal":  5
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "male_display_b",
+        "dataType":  "float",
+        "ordinal":  6
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "markings_r",
+        "dataType":  "float",
+        "ordinal":  7
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "markings_g",
+        "dataType":  "float",
+        "ordinal":  8
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "markings_b",
+        "dataType":  "float",
+        "ordinal":  9
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "flank_r",
+        "dataType":  "float",
+        "ordinal":  10
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "flank_g",
+        "dataType":  "float",
+        "ordinal":  11
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "flank_b",
+        "dataType":  "float",
+        "ordinal":  12
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "body_r",
+        "dataType":  "float",
+        "ordinal":  13
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "body_g",
+        "dataType":  "float",
+        "ordinal":  14
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "body_b",
+        "dataType":  "float",
+        "ordinal":  15
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "underbelly_r",
+        "dataType":  "float",
+        "ordinal":  16
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "underbelly_g",
+        "dataType":  "float",
+        "ordinal":  17
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "underbelly_b",
+        "dataType":  "float",
+        "ordinal":  18
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "eyes_r",
+        "dataType":  "float",
+        "ordinal":  19
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "eyes_g",
+        "dataType":  "float",
+        "ordinal":  20
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "eyes_b",
+        "dataType":  "float",
+        "ordinal":  21
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "price",
+        "dataType":  "int",
+        "ordinal":  22
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "stock",
+        "dataType":  "int",
+        "ordinal":  23
+    },
+    {
+        "table":  "skincatalogue",
+        "column":  "added_at",
+        "dataType":  "datetime",
+        "ordinal":  24
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "preset_name",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "skin_code",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "creator_discord_id",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "creator_tag",
+        "dataType":  "varchar",
+        "ordinal":  5
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "male_display_r",
+        "dataType":  "float",
+        "ordinal":  6
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "male_display_g",
+        "dataType":  "float",
+        "ordinal":  7
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "male_display_b",
+        "dataType":  "float",
+        "ordinal":  8
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "markings_r",
+        "dataType":  "float",
+        "ordinal":  9
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "markings_g",
+        "dataType":  "float",
+        "ordinal":  10
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "markings_b",
+        "dataType":  "float",
+        "ordinal":  11
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "flank_r",
+        "dataType":  "float",
+        "ordinal":  12
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "flank_g",
+        "dataType":  "float",
+        "ordinal":  13
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "flank_b",
+        "dataType":  "float",
+        "ordinal":  14
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "body_r",
+        "dataType":  "float",
+        "ordinal":  15
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "body_g",
+        "dataType":  "float",
+        "ordinal":  16
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "body_b",
+        "dataType":  "float",
+        "ordinal":  17
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "underbelly_r",
+        "dataType":  "float",
+        "ordinal":  18
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "underbelly_g",
+        "dataType":  "float",
+        "ordinal":  19
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "underbelly_b",
+        "dataType":  "float",
+        "ordinal":  20
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "eyes_r",
+        "dataType":  "float",
+        "ordinal":  21
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "eyes_g",
+        "dataType":  "float",
+        "ordinal":  22
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "eyes_b",
+        "dataType":  "float",
+        "ordinal":  23
+    },
+    {
+        "table":  "skin_presets",
+        "column":  "created_at",
+        "dataType":  "datetime",
+        "ordinal":  24
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "id",
+        "dataType":  "int",
+        "ordinal":  1
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "species_name",
+        "dataType":  "varchar",
+        "ordinal":  2
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "token_type",
+        "dataType":  "varchar",
+        "ordinal":  3
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "unlocked_by_steam_id",
+        "dataType":  "varchar",
+        "ordinal":  4
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "unlocked_by_tag",
+        "dataType":  "varchar",
+        "ordinal":  5
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "unlocked_at",
+        "dataType":  "datetime",
+        "ordinal":  6
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "expires_at",
+        "dataType":  "datetime",
+        "ordinal":  7
+    },
+    {
+        "table":  "token_species_unlocks",
+        "column":  "cooldown_expires_at",
+        "dataType":  "datetime",
+        "ordinal":  8
+    }
+]

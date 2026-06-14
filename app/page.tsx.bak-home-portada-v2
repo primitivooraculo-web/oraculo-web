@@ -1,0 +1,37 @@
+import Link from "next/link";
+import styles from "./page.module.css";
+
+const actions = [
+  { href: "/mapa", label: "Mapa", image: "/oraculo/portada/mapa.png" },
+  { href: "/garage", label: "Garage", image: "/oraculo/portada/garage.png" },
+  { href: "/skins", label: "Skins", image: "/oraculo/portada/skin.png" },
+  { href: "/patreon", label: "Patreon", image: "/oraculo/portada/patreon.png" },
+];
+
+export default function Home() {
+  return (
+    <main className={styles.home}>
+      <div className={styles.backdrop} />
+      <section className={styles.stage} aria-label="Refugio Primitivo">
+        <div className={styles.brand}>
+          <span>Refugio Primitivo</span>
+          <h1>REFUGIO</h1>
+          <p>El ecosistema. Nuestras reglas.</p>
+        </div>
+
+        <Link className={styles.adminLink} href="/admin">
+          Panel admin
+        </Link>
+
+        <nav className={styles.actionGrid} aria-label="Accesos principales">
+          {actions.map((action) => (
+            <Link className={styles.actionCard} href={action.href} key={action.href}>
+              <img src={action.image} alt="" />
+              <span>{action.label}</span>
+            </Link>
+          ))}
+        </nav>
+      </section>
+    </main>
+  );
+}

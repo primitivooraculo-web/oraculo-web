@@ -1,0 +1,25 @@
+"use client";
+
+import type { OraculoSnapshot } from "@/lib/oraculo-data";
+
+type Props = {
+  initialSnapshot: OraculoSnapshot;
+};
+
+export function OraculoDashboard({ initialSnapshot }: Props) {
+  return (
+    <main className="pixel-shell">
+      <img
+        className="pixel-reference"
+        src="/oraculo/pagina_web_MAPA.png"
+        alt="Oraculo Primitivo"
+      />
+
+      <div className="pixel-status-lines">
+        <span className="pixel-status-map">{initialSnapshot.server.map}</span>
+        <span className="pixel-status-players">{initialSnapshot.server.onlinePlayers}/200</span>
+        <span className="pixel-status-position">{initialSnapshot.server.positionMode}</span>
+      </div>
+    </main>
+  );
+}

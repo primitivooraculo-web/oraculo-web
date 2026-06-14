@@ -1,0 +1,1515 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-08T09:44:15.217Z",
+  "totals": {
+    "players": 46,
+    "garageDinos": 6,
+    "wallets": 46,
+    "playerSkins": 1,
+    "skinPresets": 13,
+    "dailyRewards": 7
+  },
+  "garageDinos": [
+    {
+      "id": "dino-11-76561199023897983-bp_deinosuchus_c",
+      "saveId": 11,
+      "steamId": "76561199023897983",
+      "species": "BP_Deinosuchus_C",
+      "displaySpecies": "Deinosuchus",
+      "nickname": "MonsieurCocolette2",
+      "growth": 0.8,
+      "health": 100,
+      "primeElder": true,
+      "location": {
+        "x": 179138,
+        "y": -67623.6,
+        "z": 20285.1
+      },
+      "parkedAt": "2026-06-07 20:25:47"
+    },
+    {
+      "id": "dino-10-76561199759104229-bp_ceratosaurus_c",
+      "saveId": 10,
+      "steamId": "76561199759104229",
+      "species": "BP_Ceratosaurus_C",
+      "displaySpecies": "Ceratosaurus",
+      "nickname": "cera",
+      "growth": 0.82,
+      "health": 100,
+      "primeElder": false,
+      "location": {
+        "x": -81133.6,
+        "y": -85712.5,
+        "z": 44123.2
+      },
+      "parkedAt": "2026-06-07 17:59:56"
+    },
+    {
+      "id": "dino-9-76561198937024990-bp_tyrannosaurus_c",
+      "saveId": 9,
+      "steamId": "76561198937024990",
+      "species": "BP_Tyrannosaurus_C",
+      "displaySpecies": "Tyrannosaurus",
+      "nickname": "Rexy",
+      "growth": 0.76,
+      "health": 100,
+      "primeElder": true,
+      "location": {
+        "x": -201791,
+        "y": -9485.87,
+        "z": 38784.8
+      },
+      "parkedAt": "2026-06-07 14:27:48"
+    },
+    {
+      "id": "dino-8-76561199198529842-bp_tyrannosaurus_c",
+      "saveId": 8,
+      "steamId": "76561199198529842",
+      "species": "BP_Tyrannosaurus_C",
+      "displaySpecies": "Tyrannosaurus",
+      "nickname": "Rexi",
+      "growth": 0.75,
+      "health": 100,
+      "primeElder": true,
+      "location": {
+        "x": -129623,
+        "y": -68474.7,
+        "z": 43641.3
+      },
+      "parkedAt": "2026-06-07 14:19:49"
+    },
+    {
+      "id": "dino-7-76561198404972985-bp_allosaurus_c",
+      "saveId": 7,
+      "steamId": "76561198404972985",
+      "species": "BP_Allosaurus_C",
+      "displaySpecies": "Allosaurus",
+      "nickname": "loo",
+      "growth": 0.83,
+      "health": 100,
+      "primeElder": true,
+      "location": {
+        "x": 530687,
+        "y": -270800,
+        "z": 20365.5
+      },
+      "parkedAt": "2026-06-07 13:56:42"
+    },
+    {
+      "id": "dino-4-76561199759104229-bp_allosaurus_c",
+      "saveId": 4,
+      "steamId": "76561199759104229",
+      "species": "BP_Allosaurus_C",
+      "displaySpecies": "Allosaurus",
+      "nickname": "allo",
+      "growth": 0.79,
+      "health": 100,
+      "primeElder": true,
+      "location": {
+        "x": 246048,
+        "y": -140226,
+        "z": 24104.7
+      },
+      "parkedAt": "2026-06-06 13:13:07"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "wallet-76561197971752711",
+      "steamId": "76561197971752711",
+      "currency": 8750,
+      "alltimeCurrency": 8750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198000958885",
+      "steamId": "76561198000958885",
+      "currency": 1500,
+      "alltimeCurrency": 1500,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198014114205",
+      "steamId": "76561198014114205",
+      "currency": 6500,
+      "alltimeCurrency": 6500,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198048120844",
+      "steamId": "76561198048120844",
+      "currency": 1000,
+      "alltimeCurrency": 1000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198049908248",
+      "steamId": "76561198049908248",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198058362702",
+      "steamId": "76561198058362702",
+      "currency": 5250,
+      "alltimeCurrency": 5250,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198067328149",
+      "steamId": "76561198067328149",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198121262215",
+      "steamId": "76561198121262215",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198131172581",
+      "steamId": "76561198131172581",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198158679031",
+      "steamId": "76561198158679031",
+      "currency": 9750,
+      "alltimeCurrency": 9750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198272653892",
+      "steamId": "76561198272653892",
+      "currency": 7000,
+      "alltimeCurrency": 7000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198296270214",
+      "steamId": "76561198296270214",
+      "currency": 3000,
+      "alltimeCurrency": 3000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198324100124",
+      "steamId": "76561198324100124",
+      "currency": 3000,
+      "alltimeCurrency": 3000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198350939832",
+      "steamId": "76561198350939832",
+      "currency": 5000,
+      "alltimeCurrency": 5000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198356376355",
+      "steamId": "76561198356376355",
+      "currency": 1500,
+      "alltimeCurrency": 1500,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198359464755",
+      "steamId": "76561198359464755",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198404972985",
+      "steamId": "76561198404972985",
+      "currency": 8250,
+      "alltimeCurrency": 8250,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198411331301",
+      "steamId": "76561198411331301",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198726781477",
+      "steamId": "76561198726781477",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198734118740",
+      "steamId": "76561198734118740",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198758667364",
+      "steamId": "76561198758667364",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198758877819",
+      "steamId": "76561198758877819",
+      "currency": 13250,
+      "alltimeCurrency": 13250,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198874801680",
+      "steamId": "76561198874801680",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198877294205",
+      "steamId": "76561198877294205",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198937024990",
+      "steamId": "76561198937024990",
+      "currency": 7750,
+      "alltimeCurrency": 7750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561198982979507",
+      "steamId": "76561198982979507",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199011555022",
+      "steamId": "76561199011555022",
+      "currency": 5750,
+      "alltimeCurrency": 5750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199015266242",
+      "steamId": "76561199015266242",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199023897983",
+      "steamId": "76561199023897983",
+      "currency": 9750,
+      "alltimeCurrency": 9750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199047810172",
+      "steamId": "76561199047810172",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199047821268",
+      "steamId": "76561199047821268",
+      "currency": 1510,
+      "alltimeCurrency": 1510,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199057474838",
+      "steamId": "76561199057474838",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199091140401",
+      "steamId": "76561199091140401",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199092808220",
+      "steamId": "76561199092808220",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199131025154",
+      "steamId": "76561199131025154",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199177161991",
+      "steamId": "76561199177161991",
+      "currency": 6000,
+      "alltimeCurrency": 6000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199198529842",
+      "steamId": "76561199198529842",
+      "currency": 6750,
+      "alltimeCurrency": 6750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199222859878",
+      "steamId": "76561199222859878",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199251299621",
+      "steamId": "76561199251299621",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199259308006",
+      "steamId": "76561199259308006",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199528530697",
+      "steamId": "76561199528530697",
+      "currency": 3250,
+      "alltimeCurrency": 3250,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199579520012",
+      "steamId": "76561199579520012",
+      "currency": 13250,
+      "alltimeCurrency": 13250,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199593082965",
+      "steamId": "76561199593082965",
+      "currency": 8000,
+      "alltimeCurrency": 8000,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199759104229",
+      "steamId": "76561199759104229",
+      "currency": 9750,
+      "alltimeCurrency": 9750,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199803358620",
+      "steamId": "76561199803358620",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    },
+    {
+      "id": "wallet-76561199887099397",
+      "steamId": "76561199887099397",
+      "currency": 0,
+      "alltimeCurrency": 0,
+      "dinoTokens": 0,
+      "apexTokens": 0,
+      "totalPlayTime": null,
+      "lastSeen": null
+    }
+  ],
+  "playerSkins": [
+    {
+      "id": "skin-76561199023897983-d433c0em010101f0d0c0cb010101u252323eff0000",
+      "steamId": "76561199023897983",
+      "skinName": "TANQUE MORO  -Arya Skin-",
+      "skinCode": "D433C0EM010101F0D0C0CB010101U252323EFF0000",
+      "species": "",
+      "amount": 1,
+      "infinite": true,
+      "colors": {
+        "male_display": {
+          "r": 0.262745,
+          "g": 0.235294,
+          "b": 0.054902,
+          "a": 1
+        },
+        "body": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.145098,
+          "g": 0.137255,
+          "b": 0.137255,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.0509804,
+          "g": 0.0470588,
+          "b": 0.0470588,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      }
+    }
+  ],
+  "skinPresets": [
+    {
+      "id": "preset-1-na-sombra-del-vacio-secret-prueba-",
+      "steamId": "",
+      "name": "Sombra del Vacio (Secret Prueba)",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.694118,
+          "g": 0.301961,
+          "b": 1,
+          "a": 1
+        },
+        "body": {
+          "r": 0.0392157,
+          "g": 0.0392157,
+          "b": 0.0392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.101961,
+          "g": 0.101961,
+          "b": 0.101961,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.415686,
+          "g": 0.0509804,
+          "b": 0.678431,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.835294,
+          "g": 0.501961,
+          "b": 1,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0,
+          "b": 1,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-03 13:17:45",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-2-na-chicle-xd",
+      "steamId": "",
+      "name": "Chicle xd",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.77,
+          "g": 0.06,
+          "b": 0.73,
+          "a": 1
+        },
+        "body": {
+          "r": 0.29,
+          "g": 0.77,
+          "b": 0.73,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.97,
+          "g": 0.12,
+          "b": 0.86,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.24,
+          "g": 0.72,
+          "b": 0.7,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.86,
+          "g": 0.21,
+          "b": 0.45,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.9,
+          "g": 0.61,
+          "b": 0.36,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-03 16:00:50",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-3-na-tanque-moro-arya-skin-",
+      "steamId": "",
+      "name": "TANQUE MORO  -Arya Skin-",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.262745,
+          "g": 0.235294,
+          "b": 0.054902,
+          "a": 1
+        },
+        "body": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.145098,
+          "g": 0.137255,
+          "b": 0.137255,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.0509804,
+          "g": 0.0470588,
+          "b": 0.0470588,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-03 16:22:53",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-4-na-sombra-del-vacio-100-real-no-feik-",
+      "steamId": "",
+      "name": "Sombra del Vacio (100% real no feik)",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.294118,
+          "g": 0,
+          "b": 0.509804,
+          "a": 1
+        },
+        "body": {
+          "r": 0.294118,
+          "g": 0,
+          "b": 0.509804,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.0196078,
+          "g": 0.0196078,
+          "b": 0.0196078,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.294118,
+          "g": 0,
+          "b": 0.509804,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.541176,
+          "g": 0.168627,
+          "b": 0.886275,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-03 18:12:09",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-5-na-t-rex-leny",
+      "steamId": "",
+      "name": "T-Rex Leny",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "body": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "flank": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "markings": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-04 21:50:05",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-6-na-t-rex-leny-negro",
+      "steamId": "",
+      "name": "T-rex Leny negro",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "body": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "flank": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-04 21:58:44",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-7-na-t-rex-leny-negro-rojo",
+      "steamId": "",
+      "name": "T-rex leny negro rojo",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "body": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "flank": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-04 22:09:48",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-8-na-full-negro",
+      "steamId": "",
+      "name": "Full Negro",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "body": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.00392157,
+          "g": 0.00392157,
+          "b": 0.00392157,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-04 22:14:50",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-9-na-equipo-a",
+      "steamId": "",
+      "name": "Equipo A",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.223529,
+          "g": 1,
+          "b": 0.0784314,
+          "a": 1
+        },
+        "body": {
+          "r": 0.0392157,
+          "g": 0.101961,
+          "b": 0.0392157,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.0627451,
+          "g": 0.0823529,
+          "b": 0.0627451,
+          "a": 1
+        },
+        "flank": {
+          "r": 0,
+          "g": 0.392157,
+          "b": 0,
+          "a": 1
+        },
+        "markings": {
+          "r": 0,
+          "g": 0.784314,
+          "b": 0.32549,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.498039,
+          "g": 1,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-06 14:33:44",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-10-na-equipo-b",
+      "steamId": "",
+      "name": "Equipo B",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 1,
+          "g": 0.843137,
+          "b": 0,
+          "a": 1
+        },
+        "body": {
+          "r": 0.101961,
+          "g": 0.0941176,
+          "b": 0,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.145098,
+          "g": 0.12549,
+          "b": 0,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.721569,
+          "g": 0.52549,
+          "b": 0.0431373,
+          "a": 1
+        },
+        "markings": {
+          "r": 1,
+          "g": 0.756863,
+          "b": 0.027451,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 1,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-06 14:36:46",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-11-na-equipo-c",
+      "steamId": "",
+      "name": "Equipo C",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0,
+          "g": 0.4,
+          "b": 1,
+          "a": 1
+        },
+        "body": {
+          "r": 0.0196078,
+          "g": 0.0392157,
+          "b": 0.0823529,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.0392157,
+          "g": 0.0627451,
+          "b": 0.12549,
+          "a": 1
+        },
+        "flank": {
+          "r": 0,
+          "g": 0.121569,
+          "b": 0.360784,
+          "a": 1
+        },
+        "markings": {
+          "r": 0,
+          "g": 0.278431,
+          "b": 0.670588,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0,
+          "g": 0.74902,
+          "b": 1,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-06 14:38:22",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-12-na-equipo-d",
+      "steamId": "",
+      "name": "Equipo D",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0,
+          "g": 0.898039,
+          "b": 1,
+          "a": 1
+        },
+        "body": {
+          "r": 0.0196078,
+          "g": 0.0627451,
+          "b": 0.0823529,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.0313726,
+          "g": 0.0941176,
+          "b": 0.12549,
+          "a": 1
+        },
+        "flank": {
+          "r": 0,
+          "g": 0.427451,
+          "b": 0.466667,
+          "a": 1
+        },
+        "markings": {
+          "r": 0,
+          "g": 0.721569,
+          "b": 0.831373,
+          "a": 1
+        },
+        "eyes": {
+          "r": 0.529412,
+          "g": 0.807843,
+          "b": 0.980392,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-06 14:40:13",
+      "updatedAt": null
+    },
+    {
+      "id": "preset-13-na-equipo-e",
+      "steamId": "",
+      "name": "Equipo E",
+      "species": "",
+      "colors": {
+        "male_display": {
+          "r": 0.0196078,
+          "g": 0.0196078,
+          "b": 0.0196078,
+          "a": 1
+        },
+        "body": {
+          "r": 0.0196078,
+          "g": 0.0196078,
+          "b": 0.0196078,
+          "a": 1
+        },
+        "underbelly": {
+          "r": 0.0196078,
+          "g": 0.0196078,
+          "b": 0.0196078,
+          "a": 1
+        },
+        "flank": {
+          "r": 0.698039,
+          "g": 0.133333,
+          "b": 0.133333,
+          "a": 1
+        },
+        "markings": {
+          "r": 0.0196078,
+          "g": 0.0196078,
+          "b": 0.0196078,
+          "a": 1
+        },
+        "eyes": {
+          "r": 1,
+          "g": 0.415686,
+          "b": 0,
+          "a": 1
+        }
+      },
+      "createdAt": "2026-06-06 14:46:22",
+      "updatedAt": null
+    }
+  ],
+  "dailyRewards": [
+    {
+      "id": 1,
+      "reward_name": "1.",
+      "reward_type": "currency",
+      "reward_value": "250",
+      "chance_percent": 25,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:38:49"
+    },
+    {
+      "id": 2,
+      "reward_name": "2.",
+      "reward_type": "currency",
+      "reward_value": "500",
+      "chance_percent": 18,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:39:01"
+    },
+    {
+      "id": 3,
+      "reward_name": "3.",
+      "reward_type": "currency",
+      "reward_value": "1000",
+      "chance_percent": 10,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:39:19"
+    },
+    {
+      "id": 4,
+      "reward_name": "4.",
+      "reward_type": "currency",
+      "reward_value": "2500",
+      "chance_percent": 6,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:39:55"
+    },
+    {
+      "id": 5,
+      "reward_name": "5.",
+      "reward_type": "currency",
+      "reward_value": "5000",
+      "chance_percent": 3,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:40:13"
+    },
+    {
+      "id": 6,
+      "reward_name": "6.",
+      "reward_type": "currency",
+      "reward_value": "10000",
+      "chance_percent": 1,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:40:36"
+    },
+    {
+      "id": 7,
+      "reward_name": "7.",
+      "reward_type": "currency",
+      "reward_value": "50000",
+      "chance_percent": 0.05,
+      "tier": 0,
+      "enabled": 1,
+      "dino_species": null,
+      "dino_growth": null,
+      "dino_health_percent": null,
+      "dino_is_prime_elder": null,
+      "dino_location_x": null,
+      "dino_location_y": null,
+      "dino_location_z": null,
+      "created_at": "2026-06-01 12:41:26"
+    }
+  ],
+  "idLinks": [
+    {
+      "id": "link-1-76561198121262215",
+      "steamId": "76561198121262215",
+      "displayName": ""
+    },
+    {
+      "id": "link-2-76561199047821268",
+      "steamId": "76561199047821268",
+      "displayName": ""
+    },
+    {
+      "id": "link-3-76561198272653892",
+      "steamId": "76561198272653892",
+      "displayName": ""
+    },
+    {
+      "id": "link-4-76561199579520012",
+      "steamId": "76561199579520012",
+      "displayName": ""
+    },
+    {
+      "id": "link-5-76561198014114205",
+      "steamId": "76561198014114205",
+      "displayName": ""
+    },
+    {
+      "id": "link-6-76561197971752711",
+      "steamId": "76561197971752711",
+      "displayName": ""
+    },
+    {
+      "id": "link-7-76561198158679031",
+      "steamId": "76561198158679031",
+      "displayName": ""
+    },
+    {
+      "id": "link-8-76561198324100124",
+      "steamId": "76561198324100124",
+      "displayName": ""
+    },
+    {
+      "id": "link-9-76561198296270214",
+      "steamId": "76561198296270214",
+      "displayName": ""
+    },
+    {
+      "id": "link-10-76561198758877819",
+      "steamId": "76561198758877819",
+      "displayName": ""
+    },
+    {
+      "id": "link-11-76561199198529842",
+      "steamId": "76561199198529842",
+      "displayName": ""
+    },
+    {
+      "id": "link-12-76561198937024990",
+      "steamId": "76561198937024990",
+      "displayName": ""
+    },
+    {
+      "id": "link-13-76561199759104229",
+      "steamId": "76561199759104229",
+      "displayName": ""
+    },
+    {
+      "id": "link-14-76561199057474838",
+      "steamId": "76561199057474838",
+      "displayName": ""
+    },
+    {
+      "id": "link-15-76561199177161991",
+      "steamId": "76561199177161991",
+      "displayName": ""
+    },
+    {
+      "id": "link-16-76561199593082965",
+      "steamId": "76561199593082965",
+      "displayName": ""
+    },
+    {
+      "id": "link-17-76561198356376355",
+      "steamId": "76561198356376355",
+      "displayName": ""
+    },
+    {
+      "id": "link-18-76561199023897983",
+      "steamId": "76561199023897983",
+      "displayName": ""
+    },
+    {
+      "id": "link-19-76561198350939832",
+      "steamId": "76561198350939832",
+      "displayName": ""
+    },
+    {
+      "id": "link-20-76561198048120844",
+      "steamId": "76561198048120844",
+      "displayName": ""
+    },
+    {
+      "id": "link-21-76561198404972985",
+      "steamId": "76561198404972985",
+      "displayName": ""
+    },
+    {
+      "id": "link-22-76561198058362702",
+      "steamId": "76561198058362702",
+      "displayName": ""
+    },
+    {
+      "id": "link-23-76561198067328149",
+      "steamId": "76561198067328149",
+      "displayName": ""
+    },
+    {
+      "id": "link-24-76561199091140401",
+      "steamId": "76561199091140401",
+      "displayName": ""
+    },
+    {
+      "id": "link-25-76561199528530697",
+      "steamId": "76561199528530697",
+      "displayName": ""
+    },
+    {
+      "id": "link-26-76561199485858671",
+      "steamId": "76561199485858671",
+      "displayName": ""
+    },
+    {
+      "id": "link-27-76561199259308006",
+      "steamId": "76561199259308006",
+      "displayName": ""
+    },
+    {
+      "id": "link-28-76561199011555022",
+      "steamId": "76561199011555022",
+      "displayName": ""
+    },
+    {
+      "id": "link-29-76561198056511113",
+      "steamId": "76561198056511113",
+      "displayName": ""
+    },
+    {
+      "id": "link-30-76561198051699392",
+      "steamId": "76561198051699392",
+      "displayName": ""
+    },
+    {
+      "id": "link-31-76561198000958885",
+      "steamId": "76561198000958885",
+      "displayName": ""
+    },
+    {
+      "id": "link-32-76561199161213026",
+      "steamId": "76561199161213026",
+      "displayName": ""
+    },
+    {
+      "id": "link-33-76561198131172581",
+      "steamId": "76561198131172581",
+      "displayName": ""
+    }
+  ]
+}

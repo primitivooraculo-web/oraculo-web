@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-09T00:00:00.000Z",
+  "presets": [
+    {
+      "id": "refugio-bronce",
+      "name": "Refugio Bronce",
+      "status": "available",
+      "dino": "Tyrannosaurus",
+      "pattern_index": 2,
+      "gender": 1,
+      "skin_variation": 0.5,
+      "colors": {
+        "male_display": { "r": 0.5, "g": 0.3, "b": 0.2, "a": 1 },
+        "markings": { "r": 0.4, "g": 0.4, "b": 0.4, "a": 1 },
+        "body": { "r": 0.6, "g": 0.3, "b": 0.2, "a": 1 },
+        "flank": { "r": 0.5, "g": 0.3, "b": 0.2, "a": 1 },
+        "underbelly": { "r": 0.7, "g": 0.6, "b": 0.4, "a": 1 },
+        "detail": { "r": 0.3, "g": 0.2, "b": 0.1, "a": 1 },
+        "eyes": { "r": 0.8, "g": 0.7, "b": 0.1, "a": 1 }
+      }
+    },
+    {
+      "id": "selva-turquesa",
+      "name": "Selva Turquesa",
+      "status": "available",
+      "dino": "Carnotaurus",
+      "pattern_index": 1,
+      "gender": 1,
+      "skin_variation": 0.35,
+      "colors": {
+        "male_display": { "r": 0.04, "g": 0.65, "b": 0.52, "a": 1 },
+        "markings": { "r": 0.02, "g": 0.22, "b": 0.18, "a": 1 },
+        "body": { "r": 0.06, "g": 0.38, "b": 0.28, "a": 1 },
+        "flank": { "r": 0.08, "g": 0.48, "b": 0.34, "a": 1 },
+        "underbelly": { "r": 0.68, "g": 0.58, "b": 0.38, "a": 1 },
+        "detail": { "r": 0.72, "g": 0.43, "b": 0.06, "a": 1 },
+        "eyes": { "r": 0.95, "g": 0.72, "b": 0.12, "a": 1 }
+      }
+    },
+    {
+      "id": "noche-pantano",
+      "name": "Noche Pantano",
+      "status": "available",
+      "dino": "Deinosuchus",
+      "pattern_index": 0,
+      "gender": 1,
+      "skin_variation": 0.62,
+      "colors": {
+        "male_display": { "r": 0.09, "g": 0.18, "b": 0.15, "a": 1 },
+        "markings": { "r": 0.01, "g": 0.08, "b": 0.07, "a": 1 },
+        "body": { "r": 0.05, "g": 0.12, "b": 0.1, "a": 1 },
+        "flank": { "r": 0.07, "g": 0.2, "b": 0.16, "a": 1 },
+        "underbelly": { "r": 0.33, "g": 0.31, "b": 0.2, "a": 1 },
+        "detail": { "r": 0.58, "g": 0.47, "b": 0.18, "a": 1 },
+        "eyes": { "r": 0.92, "g": 0.82, "b": 0.28, "a": 1 }
+      }
+    },
+    {
+      "id": "arena-antigua",
+      "name": "Arena Antigua",
+      "status": "draft",
+      "dino": "Allosaurus",
+      "pattern_index": 2,
+      "gender": 0,
+      "skin_variation": 0.42,
+      "colors": {
+        "male_display": { "r": 0.52, "g": 0.4, "b": 0.22, "a": 1 },
+        "markings": { "r": 0.26, "g": 0.18, "b": 0.1, "a": 1 },
+        "body": { "r": 0.56, "g": 0.42, "b": 0.24, "a": 1 },
+        "flank": { "r": 0.44, "g": 0.31, "b": 0.18, "a": 1 },
+        "underbelly": { "r": 0.76, "g": 0.66, "b": 0.43, "a": 1 },
+        "detail": { "r": 0.19, "g": 0.14, "b": 0.09, "a": 1 },
+        "eyes": { "r": 0.78, "g": 0.58, "b": 0.11, "a": 1 }
+      }
+    }
+  ]
+}

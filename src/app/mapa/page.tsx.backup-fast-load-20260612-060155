@@ -1,0 +1,13 @@
+import { cookies } from "next/headers";
+import { getOraculoSnapshot } from "@/lib/oraculo-bridge";
+import { MapaDashboard } from "./MapaDashboard";
+
+export const dynamic = "force-dynamic";
+
+export default async function MapaPage() {
+  const cookieStore = await cookies();
+  const steamId = cookieStore.get("oraculo_steam_id")?.value || null;
+  const snapshot = await getOraculoSnapshot(steamId, []);
+
+  return <MapaDashboard initialSnapshot={snapshot} />;
+}

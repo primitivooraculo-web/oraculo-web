@@ -1,0 +1,380 @@
+:root {
+  --bg: #030807;
+  --cyan: #00f0c8;
+  --gold: #d79738;
+  --text: #e8fff9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clean-shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 18px 18px 18px 12px;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 240, 200, 0.1), transparent 38rem),
+    linear-gradient(180deg, #06100f 0%, #010303 100%);
+}
+
+.clean-map-card {
+  position: relative;
+  width: min(100%, calc((100vh - 36px) * 1672 / 941));
+  aspect-ratio: 1672 / 941;
+  overflow: hidden;
+  border: 1px solid rgba(215, 151, 56, 0.72);
+  border-radius: 4px;
+  background: #000;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.58);
+}
+
+.clean-map {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.clean-dino-marker {
+  position: absolute;
+  width: clamp(24px, 2vw, 38px);
+  height: clamp(18px, 1.55vw, 30px);
+  display: grid;
+  place-items: center;
+  transform: translate(-50%, -50%);
+  transition: left 1.15s linear, top 1.15s linear;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.clean-dino-marker::before {
+  position: absolute;
+  inset: 20% 8%;
+  content: "";
+  border-radius: 999px;
+  filter: blur(7px);
+  opacity: 0.9;
+}
+
+.clean-dino-marker.self::before {
+  background: rgba(255, 45, 36, 0.75);
+}
+
+.clean-dino-marker.friend::before {
+  background: rgba(0, 240, 200, 0.72);
+}
+
+.clean-dino-marker img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation: dino-walk 0.72s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 5px #ffd27a) drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
+}
+
+.clean-dino-marker.friend img {
+  filter: drop-shadow(0 0 5px #00f0c8) drop-shadow(0 0 10px rgba(0, 0, 0, 0.85));
+}
+
+.clean-live-marker {
+  position: absolute;
+  width: clamp(12px, 0.95vw, 18px);
+  height: clamp(12px, 0.95vw, 18px);
+  border: 2px solid #ffd27a;
+  border-radius: 50%;
+  background: #00f0c8;
+  box-shadow: 0 0 0 6px rgba(0, 240, 200, 0.18), 0 0 20px rgba(255, 225, 132, 0.85);
+  transform: translate(-50%, -50%);
+  transition: left 1.15s linear, top 1.15s linear;
+  pointer-events: none;
+  z-index: 4;
+}
+
+.clean-live-marker.self {
+  background: #ff2d24;
+}
+
+@keyframes dino-walk {
+  from {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+  to {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
+
+.clean-sidebar {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  width: 220px;
+}
+
+.clean-panel {
+  display: grid;
+  gap: 6px;
+  border: 1px solid rgba(215, 151, 56, 0.58);
+  border-radius: 4px;
+  background: rgba(0, 8, 7, 0.72);
+  padding: 12px 14px;
+  color: #ffd27a;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+
+.clean-panel strong {
+  color: var(--cyan);
+  font-size: 13px;
+}
+
+.clean-panel em {
+  max-width: 180px;
+  color: rgba(232, 255, 249, 0.72);
+  font-size: 10px;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+}
+
+.clean-data-list {
+  display: grid;
+  gap: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(0, 240, 200, 0.22);
+}
+
+.profile-dino-card {
+  display: grid;
+  place-items: center;
+  min-height: 92px;
+  border: 1px solid rgba(215, 151, 56, 0.42);
+  background: rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+.profile-dino-card img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+.friend-form {
+  display: grid;
+  gap: 6px;
+}
+
+.friend-form input {
+  width: 100%;
+  min-height: 30px;
+  border: 1px solid rgba(0, 240, 200, 0.35);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.38);
+  color: var(--text);
+  padding: 6px 8px;
+  font: inherit;
+  letter-spacing: 0;
+}
+
+.friend-form button,
+.friend-chip {
+  min-height: 28px;
+  border: 1px solid rgba(0, 240, 200, 0.65);
+  border-radius: 3px;
+  background: rgba(0, 240, 200, 0.08);
+  color: var(--cyan);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.friend-chip {
+  color: #ffd27a;
+  text-align: left;
+  padding: 5px 7px;
+  font-size: 10px;
+}
+
+.clean-steam-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  margin-top: 4px;
+  border: 1px solid rgba(0, 240, 200, 0.75);
+  border-radius: 4px;
+  color: var(--cyan);
+  background: rgba(0, 240, 200, 0.08);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.clean-steam-button:hover {
+  background: rgba(0, 240, 200, 0.16);
+}
+
+@media (max-width: 760px) {
+  .clean-shell {
+    grid-template-columns: 1fr;
+    align-items: start;
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .clean-sidebar {
+    width: min(100%, 360px);
+  }
+
+  .clean-map-card {
+    width: 1100px;
+    max-width: none;
+  }
+}
+
+/* ORACULO MAPA V4 START */
+.clean-map-stage {
+  position: absolute;
+  inset: 0;
+  transform-origin: center;
+  transition: transform 180ms ease;
+}
+
+.map-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  display: grid;
+  gap: 6px;
+}
+
+.map-controls button {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(215, 151, 56, 0.82);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.72);
+  color: #ffd27a;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.72);
+}
+
+.map-controls button:hover {
+  border-color: var(--cyan);
+  color: var(--cyan);
+  background: rgba(0, 240, 200, 0.12);
+}
+
+.clean-dino-marker,
+.clean-live-marker {
+  pointer-events: auto;
+  cursor: help;
+}
+
+.clean-dino-marker::after,
+.clean-live-marker::after {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  min-width: max-content;
+  max-width: 220px;
+  padding: 5px 8px;
+  border: 1px solid rgba(215, 151, 56, 0.78);
+  border-radius: 4px;
+  background: rgba(0, 7, 6, 0.94);
+  color: #ffd27a;
+  content: attr(data-label);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  line-height: 1.25;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, 4px);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+
+.clean-dino-marker:hover::after,
+.clean-live-marker:hover::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.clean-live-marker.unknown,
+.clean-live-marker.self {
+  background: #ff2d24;
+  box-shadow: 0 0 0 6px rgba(255, 45, 36, 0.2), 0 0 20px rgba(255, 45, 36, 0.88);
+}
+
+.clean-friend-list {
+  display: grid;
+  gap: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(0, 240, 200, 0.22);
+}
+
+.friend-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 6px;
+  min-height: 30px;
+  border: 1px solid rgba(0, 240, 200, 0.32);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.24);
+  padding: 4px;
+}
+
+.friend-row span {
+  min-width: 0;
+  overflow: hidden;
+  color: #ffd27a;
+  font-size: 10px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.friend-row button {
+  display: grid;
+  place-items: center;
+  min-height: 22px;
+  width: 22px;
+  padding: 0;
+  border: 1px solid rgba(255, 45, 36, 0.72);
+  border-radius: 3px;
+  color: #ff766f;
+  background: rgba(255, 45, 36, 0.1);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.friend-row button:hover {
+  color: #fff;
+  background: rgba(255, 45, 36, 0.28);
+}
+/* ORACULO MAPA V4 END */

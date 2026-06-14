@@ -1,0 +1,4 @@
+.oraculo-local-backups/
+**/*.bak-mapa-v*
+**/*.backup-live-*
+**/*.backup-cache-*

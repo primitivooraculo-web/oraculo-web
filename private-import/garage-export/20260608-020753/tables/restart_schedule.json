@@ -1,0 +1,1 @@
+﻿[{"id": 7, "restart_time": "09:00:00", "player_threshold": 10, "warning_intervals": "30,10,5", "enabled": 1, "was_skipped": 0},{"id": 8, "restart_time": "17:00:00", "player_threshold": 10, "warning_intervals": "30,15,5", "enabled": 1, "was_skipped": 0}]

@@ -1,0 +1,35 @@
+import { NextRequest, NextResponse } from "next/server";
+import { cookies } from "next/headers";
+import { getOraculoAdminDebug, getOraculoSnapshot } from "@/lib/oraculo-bridge";
+
+export const dynamic = "force-dynamic";
+
+export async function GET(request: NextRequest) {
+  const cookieStore = await cookies();
+  const steamId = cookieStore.get("oraculo_steam_id")?.value || null;
+  const friendIds = (request.nextUrl.searchParams.get("friends") || "")
+    .split(",")
+    .map((id) => id.trim())
+    .filter((id) => /^765\d{14}$/.test(id))
+    .slice(0, 20);
+
+  if (request.nextUrl.searchParams.get("debug") === "admin") {
+    const token = process.env.ORACULO_ADMIN_TOKEN || process.env.ADMIN_TOKEN || "";
+    if (!token || request.headers.get("x-oraculo-admin-token") !== token) {
+      return NextResponse.json({ ok: false, error: "Token admin invalido." }, { status: 401 });
+    }
+
+    return NextResponse.json({
+      ok: true,
+      generatedAt: new Date().toISOString(),
+      debug: await getOraculoAdminDebug(steamId, friendIds),
+    });
+  }
+
+  const snapshot = await getOraculoSnapshot(steamId, friendIds);
+
+  return NextResponse.json({
+    ...snapshot,
+    generatedAt: new Date().toISOString(),
+  });
+}

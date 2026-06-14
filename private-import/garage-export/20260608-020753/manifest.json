@@ -1,0 +1,98 @@
+﻿{
+    "generatedAt":  "2026-06-08T02:07:55.3237358-07:00",
+    "source":  "local-legacy-db",
+    "database":  "primalcore",
+    "readOnly":  true,
+    "tables":  [
+                   {
+                       "table":  "announcement_schedule",
+                       "rows":  2,
+                       "file":  "tables/announcement_schedule.json"
+                   },
+                   {
+                       "table":  "corpse_wipe_schedule",
+                       "rows":  0,
+                       "file":  "tables/corpse_wipe_schedule.json"
+                   },
+                   {
+                       "table":  "daily_spin_rewards",
+                       "rows":  7,
+                       "file":  "tables/daily_spin_rewards.json"
+                   },
+                   {
+                       "table":  "dinocatalogue",
+                       "rows":  0,
+                       "file":  "tables/dinocatalogue.json"
+                   },
+                   {
+                       "table":  "idsync",
+                       "rows":  33,
+                       "file":  "tables/idsync.json"
+                   },
+                   {
+                       "table":  "parkeddinos",
+                       "rows":  6,
+                       "file":  "tables/parkeddinos.json"
+                   },
+                   {
+                       "table":  "patreon_tiers",
+                       "rows":  0,
+                       "file":  "tables/patreon_tiers.json"
+                   },
+                   {
+                       "table":  "playercooldowns",
+                       "rows":  53,
+                       "file":  "tables/playercooldowns.json"
+                   },
+                   {
+                       "table":  "playersonline",
+                       "rows":  0,
+                       "file":  "tables/playersonline.json"
+                   },
+                   {
+                       "table":  "playerstats",
+                       "rows":  46,
+                       "file":  "tables/playerstats.json"
+                   },
+                   {
+                       "table":  "player_punishments",
+                       "rows":  0,
+                       "file":  "tables/player_punishments.json"
+                   },
+                   {
+                       "table":  "player_skins",
+                       "rows":  1,
+                       "file":  "tables/player_skins.json"
+                   },
+                   {
+                       "table":  "restart_schedule",
+                       "rows":  2,
+                       "file":  "tables/restart_schedule.json"
+                   },
+                   {
+                       "table":  "serversettings",
+                       "rows":  129,
+                       "file":  "tables/serversettings.json"
+                   },
+                   {
+                       "table":  "skincatalogue",
+                       "rows":  0,
+                       "file":  "tables/skincatalogue.json"
+                   },
+                   {
+                       "table":  "skin_presets",
+                       "rows":  13,
+                       "file":  "tables/skin_presets.json"
+                   },
+                   {
+                       "table":  "token_species_unlocks",
+                       "rows":  0,
+                       "file":  "tables/token_species_unlocks.json"
+                   }
+               ],
+    "notes":  [
+                  "Private migration export.",
+                  "Do not commit this folder.",
+                  "No source rows were modified."
+              ]
+}

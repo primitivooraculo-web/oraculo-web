@@ -1,0 +1,41 @@
+# Environment
+.env*
+!.env.example
+
+# Vercel
+.vercel
+
+# Next.js
+.next
+out
+
+# Dependencies
+node_modules
+
+# Backups
+backups
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+tmp
+temp
+
+# Audit files
+.env.production.audit
+.env.vercel.audit
+
+# Historical backups
+.oraculo-local-backups
+
+# Archived material
+_oraculo_archivo
+
+# Local zip packages
+*.zip

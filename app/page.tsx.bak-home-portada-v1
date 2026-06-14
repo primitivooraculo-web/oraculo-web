@@ -1,0 +1,44 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import "./oraculo-home.css";
+
+export const metadata: Metadata = {
+  title: "Refugio Primitivo",
+  description: "Portal principal de Refugio Primitivo.",
+};
+
+const navItems = [
+  { href: "/mapa", label: "Mapa", icon: "M" },
+  { href: "/garage", label: "Garage", icon: "G" },
+  { href: "/skins", label: "Skins", icon: "S" },
+  { href: "/patreon", label: "Patreon", icon: "P" },
+];
+
+export default function HomePage() {
+  return (
+    <main className="rp-home">
+      <div className="rp-home-inner">
+        <section className="rp-title-row">
+          <div>
+            <span className="rp-kicker">Refugio Primitivo</span>
+            <h1>Refugio</h1>
+            <p>El ecosistema. Nuestras reglas.</p>
+          </div>
+          <Link className="rp-admin-link" href="/admin">
+            Panel admin
+          </Link>
+        </section>
+
+        <nav className="rp-nav-grid" aria-label="Refugio Primitivo">
+          {navItems.map((item) => (
+            <Link className="rp-nav-card" href={item.href} key={item.href}>
+              <span className="rp-nav-icon" aria-hidden="true">{item.icon}</span>
+              <strong>{item.label}</strong>
+            </Link>
+          ))}
+        </nav>
+      </div>
+    </main>
+  );
+}
+

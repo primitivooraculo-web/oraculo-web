@@ -1,0 +1,57 @@
+.oraculo-shell {
+  overflow-x: hidden;
+  padding: 14px;
+  background:
+    radial-gradient(circle at 50% -12%, rgba(0, 216, 193, 0.18), transparent 42rem),
+    linear-gradient(180deg, rgba(4, 18, 17, 0.96), #020706 42%, #010303);
+}
+
+.top-grid,
+.dashboard-grid,
+.footer-banner,
+.module-view {
+  width: min(100%, 1680px);
+  max-width: 1680px;
+}
+
+.top-grid {
+  grid-template-columns: 340px minmax(0, 1fr) 300px;
+  gap: 12px;
+}
+
+.dashboard-grid {
+  grid-template-columns: 320px minmax(0, 1fr) 320px;
+  gap: 12px;
+  align-items: start;
+}
+
+.left-rail,
+.right-rail,
+.map-stage {
+  min-width: 0;
+}
+
+.map-frame {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.map-image {
+  object-fit: contain;
+  background: #03100f;
+}
+
+.heat-panel img {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .top-grid,
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .module-nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

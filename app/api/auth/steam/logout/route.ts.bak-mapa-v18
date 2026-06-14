@@ -1,0 +1,33 @@
+import { NextRequest, NextResponse } from "next/server";
+
+export const dynamic = "force-dynamic";
+
+function cookieDomain(host: string) {
+  const cleanHost = host.split(":")[0].toLowerCase();
+  if (cleanHost === "oraculoprimitivo.xyz" || cleanHost.endsWith(".oraculoprimitivo.xyz")) {
+    return ".oraculoprimitivo.xyz";
+  }
+  return undefined;
+}
+
+export async function GET(request: NextRequest) {
+  const response = NextResponse.redirect(new URL("/mapa", request.url));
+  const domain = cookieDomain(request.headers.get("x-forwarded-host") || request.nextUrl.host);
+  response.cookies.set("oraculo_steam_id", "", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+    domain,
+    maxAge: 0,
+  });
+  response.cookies.set("oraculo_steam_next", "", {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+    domain,
+    maxAge: 0,
+  });
+  return response;
+}
