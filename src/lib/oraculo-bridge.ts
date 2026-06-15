@@ -32,9 +32,9 @@ const ADMIN_AGENT_TOKEN =
   process.env.ADMIN_TOKEN ||
   "";
 const ADMIN_AGENT_FALLBACK_URL = ADMIN_AGENT_DIRECT_URL;
-const ADMIN_CACHE_MS = 2000;
+const ADMIN_CACHE_MS = 10000;
 const ADMIN_STALE_MS = 120000;
-const ADMIN_FETCH_TIMEOUT_MS = Math.max(25000, Number(process.env.ORACULO_ADMIN_FETCH_TIMEOUT_MS || 30000));
+const ADMIN_FETCH_TIMEOUT_MS = Math.max(3000, Number(process.env.ORACULO_ADMIN_FETCH_TIMEOUT_MS || 7000));
 
 type AdminCacheEntry = {
   receivedAt: number;
@@ -553,6 +553,7 @@ async function snapshotFromAdminAgent(
   friendSteamIds: string[] = [],
 ): Promise<OraculoSnapshot | null> {
   if (!ADMIN_PROXY_TOKEN && !ADMIN_AGENT_TOKEN) return null;
+
   const key = cacheKey(viewerSteamId, friendSteamIds);
   const cached = adminSnapshotCache.get(key);
   if (cached && Date.now() - cached.receivedAt < ADMIN_CACHE_MS) return cached.snapshot;
@@ -562,23 +563,31 @@ async function snapshotFromAdminAgent(
     ...friendSteamIds,
   ].filter((id, index, all) => /^765\d{14}$/.test(id) && all.indexOf(id) === index).slice(0, 12);
 
+  const listPayload = await adminAgentFetch({ op: "player-list" }).catch(() => null);
+  const listPlayers = playersFromAdminList(listPayload);
+  const onlinePlayers = listPlayers
+    .map((player, index) => toPlayer(normalizeAdminPlayer(player), index))
+    .filter((player): player is OraculoPlayer => Boolean(player));
+
+  const onlineIds = new Set(onlinePlayers.map((player) => player.id));
+
+  const detailTargetIds = listPayload
+    ? targetIds.filter((steamId) => onlineIds.has(steamId))
+    : targetIds.filter((steamId) => steamId === viewerSteamId).slice(0, 1);
+
   const detailPlayers = (
     await Promise.all(
-      targetIds.map(async (steamId) => {
+      detailTargetIds.map(async (steamId) => {
         const payload = await adminAgentFetch({ op: "player-data", steamId }).catch(() => null);
         return payload?.player ? normalizeAdminPlayer(payload.player) : null;
       }),
     )
   ).filter(Boolean);
 
-  let listPayload: AdminAgentResponse | null = null;
-  let listPlayers: unknown[] = [];
-  if (detailPlayers.length === 0 || friendSteamIds.length > 0 || !viewerSteamId) {
-    listPayload = await adminAgentFetch({ op: "player-list" }).catch(() => null);
-    listPlayers = playersFromAdminList(listPayload);
-  }
+  const fallbackPlayers = detailPlayers.length > 0
+    ? detailPlayers
+    : onlinePlayers;
 
-  const fallbackPlayers = detailPlayers.length > 0 ? detailPlayers : listPlayers.map(normalizeAdminPlayer);
   const parsedPlayers = fallbackPlayers
     .map((player, index) => toPlayer(player, index))
     .filter((player): player is OraculoPlayer => Boolean(player));
@@ -599,13 +608,13 @@ async function snapshotFromAdminAgent(
         ? listPayload.onlinePlayers
         : typeof listPayload?.online === "number"
           ? listPayload.online
-          : parsedPlayers.length,
+          : onlinePlayers.length || parsedPlayers.length,
     },
     mapPlayers: [],
     friends: [],
   }, viewerSteamId, parsedPlayers, friendSteamIds);
 
-  if (snapshotHasLivePlayers(snapshot) || parsedPlayers.length > 0) {
+  if (snapshotHasLivePlayers(snapshot) || parsedPlayers.length > 0 || Boolean(listPayload)) {
     adminSnapshotCache.set(key, { receivedAt: Date.now(), snapshot });
   }
 
