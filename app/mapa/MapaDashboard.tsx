@@ -435,7 +435,7 @@ export function MapaDashboard({ initialSnapshot }: Props) {
 
     const tick = async () => {
       if (liveRequestRef.current) {
-        if (!stopped) timer = window.setTimeout(tick, document.hidden ? 60000 : 30000);
+        if (!stopped) timer = window.setTimeout(tick, document.hidden ? 60000 : 8000);
         return;
       }
       liveRequestRef.current = true;
@@ -466,7 +466,7 @@ export function MapaDashboard({ initialSnapshot }: Props) {
         // Keep the map visible even if telemetry is unavailable.
       } finally {
         liveRequestRef.current = false;
-        if (!stopped) timer = window.setTimeout(tick, document.hidden ? 60000 : 30000);
+        if (!stopped) timer = window.setTimeout(tick, document.hidden ? 60000 : 8000);
       }
     };
 
