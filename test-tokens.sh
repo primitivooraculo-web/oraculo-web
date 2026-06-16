@@ -1,0 +1,11 @@
+URL="https://skin-api.oraculoprimitivo.xyz/api/admin/auth/status"
+T1="775db661f066836a6ca54e48d0a35033099ad25f419afb22dcf4f568f9c35222"
+T2="ac7821a669991d3f1617ec9e037e6c4abcb0be2e01d9b6a4edbd5cbdfcca7b70"
+
+echo "=== TEST 1: Llave 1 (Bearer) ==="
+curl -sS $URL -H "Authorization: Bearer $T1"
+echo -e "\n\n=== TEST 2: Llave 2 (Bearer) ==="
+curl -sS $URL -H "Authorization: Bearer $T2"
+echo -e "\n\n=== TEST 3: Llave 1 (Headers Nativos) ==="
+curl -sS $URL -H "x-admin-agent-token: $T1" -H "admin-agent-token: $T1" -H "admin_agent_token: $T1"
+echo -e "\n"
