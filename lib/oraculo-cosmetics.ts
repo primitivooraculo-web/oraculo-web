@@ -130,7 +130,7 @@ export async function forwardCosmetics(request: NextRequest, path: string) {
   const base = cleanBaseUrl(process.env.ORACULO_COSMETICS_API_URL);
   if (!base) return null;
 
-  const token = cleanEnvValue(process.env.ORACULO_COSMETICS_API_TOKEN);
+  const token = cleanEnvValue(process.env.ORACULO_COSMETICS_API_TOKEN || process.env.ORACULO_ADMIN_TOKEN || process.env.ADMIN_TOKEN);
 
   try {
     const target = new URL(`${base}${path}`);
@@ -138,7 +138,7 @@ export async function forwardCosmetics(request: NextRequest, path: string) {
 
     const headers = new Headers();
     headers.set("content-type", request.headers.get("content-type") || "application/json");
-    if (token) headers.set("authorization", `Bearer ${token}`);
+    if (token) { headers.set("authorization", `Bearer ${token}`); headers.set("x-oraculo-admin-token", token); }
 
     const body = request.method === "GET" ? undefined : await request.text();
     const response = await fetch(target, {
