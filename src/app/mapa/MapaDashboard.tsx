@@ -103,9 +103,10 @@ export function MapaDashboard({ initialSnapshot }: Props) {
       }
     };
 
-    const timer = window.setInterval(tick, 4000);
+    // 🔥 AQUÍ ESTÁ LA CURA DEL LOOP INFINITO 🔥
+    // Eliminamos el setInterval que bombardeaba el servidor cada 4 segundos.
+    // Ahora, el mapa ejecuta esta consulta UNA SOLA VEZ y se detiene.
     tick();
-    return () => window.clearInterval(timer);
   }, [friendIds]);
 
   const mapMarkers = useMemo(
