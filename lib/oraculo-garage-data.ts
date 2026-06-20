@@ -1,6 +1,13 @@
 import fs from "node:fs";
 import path from "node:path";
 
+type MutationData = {
+  slots: Record<string, string>;
+  parent: Record<string, string>;
+  elderA: Record<string, string>;
+  elderB: Record<string, string>;
+};
+
 type GarageDino = {
   id: string;
   saveId?: number;
@@ -13,9 +20,8 @@ type GarageDino = {
   primeElder?: boolean;
   location?: { x: number | null; y: number | null; z: number | null };
   parkedAt?: string | null;
-  // 🚀 LA MAGIA: La bolsa infinita para mutaciones y el registro de la dieta perfecta
-  mutations?: string[];
-  diet?: { lipids: number; carbs: number; proteins: number };
+  diet?: any;
+  mutations?: MutationData; // 🚀 El nuevo formato exacto de Evrima
 };
 
 type Wallet = {
@@ -162,9 +168,8 @@ function buildGarageView(data: GarageNativeData, scopeSteamId = "") {
     health: Math.round(percent(dino.health)),
     primeElder: Boolean(dino.primeElder),
     parkedAt: dateLabel(dino.parkedAt),
-    // 🚀 INYECCIÓN AL FRONTEND: Ahora la página web sí recibe las mutaciones y la dieta
-    mutations: Array.isArray(dino.mutations) ? dino.mutations : [],
-    diet: dino.diet || { lipids: 0, carbs: 0, proteins: 0 }
+    diet: dino.diet || null,
+    mutations: dino.mutations || null // 🚀 Dejamos pasar la estructura de mutaciones sin modificar
   }));
 
   const walletTotals = scopedWallets.reduce(
