@@ -163,14 +163,14 @@ function publicSave(record) {
   };
 }
 
-// 🚀 REVERTIDA LA DIETA A LA ORIGINAL DEL JUEGO. SOLO INYECTAMOS MUTACIONES.
+// 🚀 LA MAGIA FINAL: Respetamos el formato exacto de Evrima
 function restorePayload(record, currentPlayer, webMutations = null) {
   const snapshot = record.snapshot;
   const location = snapshot.location || {};
 
-  // Solo alteramos las mutaciones si la web nos manda algo válido
+  // Validamos que webMutations sea un objeto complejo (como el de tu foto) y no un array ni vacío
   let finalMutations = snapshot.mutations || {};
-  if (webMutations && Array.isArray(webMutations) && webMutations.length > 0) {
+  if (webMutations && typeof webMutations === 'object' && webMutations.slots) {
     finalMutations = webMutations;
   }
 
@@ -185,15 +185,15 @@ function restorePayload(record, currentPlayer, webMutations = null) {
     growth: snapshot.growth,
     health: snapshot.health,
     stamina: snapshot.stamina,
-    hunger: snapshot.hunger,
-    thirst: snapshot.thirst,
+    hunger: snapshot.hunger, // Se queda intacto del snapshot
+    thirst: snapshot.thirst, // Se queda intacto del snapshot
     gender: snapshot.player?.gender || "",
     primeElder: snapshot.primeElder ? "true" : "false",
     skin: snapshot.skin || "",
     skinCode: snapshot.skin?.skin_code || snapshot.skin?.skinCode || snapshot.skin || "",
-    dietJson: JSON.stringify(snapshot.diet || {}), // <--- La comida se queda intacta como viene del juego
+    dietJson: JSON.stringify(snapshot.diet || {}), // Se queda intacto del snapshot
     vitaminsJson: JSON.stringify(snapshot.vitamins || {}),
-    mutationsJson: JSON.stringify(finalMutations),
+    mutationsJson: JSON.stringify(finalMutations), // Usamos el objeto de mutaciones validado
     snapshotJson: JSON.stringify(snapshot),
   };
 }
@@ -293,7 +293,6 @@ async function reuseSave(params = {}, deps = {}) {
     throw new Error(`Solo puedes reutilizar antes del ${Math.round(max * 100)}% de growth.`);
   }
 
-  // Ahora solo le pasamos las mutaciones limpias
   const payload = restorePayload(record, current, params.mutations);
   const restoreResult = await deps.restoreDino({
     action: "restore-dino",
