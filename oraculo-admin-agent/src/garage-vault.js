@@ -163,17 +163,12 @@ function publicSave(record) {
   };
 }
 
-function restorePayload(record, currentPlayer, webMutations = null, webDiet = null) {
+// 🚀 REVERTIDA LA DIETA A LA ORIGINAL DEL JUEGO. SOLO INYECTAMOS MUTACIONES.
+function restorePayload(record, currentPlayer, webMutations = null) {
   const snapshot = record.snapshot;
   const location = snapshot.location || {};
 
-  // Proteccion de Dieta
-  let finalDiet = snapshot.diet || {};
-  if (webDiet && (webDiet.lipids > 0 || webDiet.carbs > 0 || webDiet.proteins > 0)) {
-    finalDiet = webDiet;
-  }
-
-  // Proteccion de Mutaciones
+  // Solo alteramos las mutaciones si la web nos manda algo válido
   let finalMutations = snapshot.mutations || {};
   if (webMutations && Array.isArray(webMutations) && webMutations.length > 0) {
     finalMutations = webMutations;
@@ -196,7 +191,7 @@ function restorePayload(record, currentPlayer, webMutations = null, webDiet = nu
     primeElder: snapshot.primeElder ? "true" : "false",
     skin: snapshot.skin || "",
     skinCode: snapshot.skin?.skin_code || snapshot.skin?.skinCode || snapshot.skin || "",
-    dietJson: JSON.stringify(finalDiet),
+    dietJson: JSON.stringify(snapshot.diet || {}), // <--- La comida se queda intacta como viene del juego
     vitaminsJson: JSON.stringify(snapshot.vitamins || {}),
     mutationsJson: JSON.stringify(finalMutations),
     snapshotJson: JSON.stringify(snapshot),
@@ -298,7 +293,8 @@ async function reuseSave(params = {}, deps = {}) {
     throw new Error(`Solo puedes reutilizar antes del ${Math.round(max * 100)}% de growth.`);
   }
 
-  const payload = restorePayload(record, current, params.mutations, params.diet);
+  // Ahora solo le pasamos las mutaciones limpias
+  const payload = restorePayload(record, current, params.mutations);
   const restoreResult = await deps.restoreDino({
     action: "restore-dino",
     ...payload,
