@@ -98,8 +98,9 @@ export default function GarageDeleteButton() {
     }
 
     load();
-    const timer = window.setInterval(load, 3000);
-    return () => window.clearInterval(timer);
+    // 🔥 AQUÍ ESTÁ LA CURA DEL LOOP INFINITO 🔥
+    const timer = window.setTimeout(load, 3000);
+    return () => window.clearTimeout(timer);
   }, []);
 
   return null;
