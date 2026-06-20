@@ -163,14 +163,22 @@ function publicSave(record) {
   };
 }
 
-// 🚀 LA MAGIA FINAL: Prioriza las mutaciones de la web antes que el snapshot viejo
 function restorePayload(record, currentPlayer, webMutations = null, webDiet = null) {
   const snapshot = record.snapshot;
   const location = snapshot.location || {};
-  
-  const finalMutations = (Array.isArray(webMutations) && webMutations.length > 0) ? webMutations : (snapshot.mutations || []);
-  const finalDiet = webDiet ? webDiet : (snapshot.diet || {});
-  
+
+  // Proteccion de Dieta
+  let finalDiet = snapshot.diet || {};
+  if (webDiet && (webDiet.lipids > 0 || webDiet.carbs > 0 || webDiet.proteins > 0)) {
+    finalDiet = webDiet;
+  }
+
+  // Proteccion de Mutaciones
+  let finalMutations = snapshot.mutations || {};
+  if (webMutations && Array.isArray(webMutations) && webMutations.length > 0) {
+    finalMutations = webMutations;
+  }
+
   return {
     saveId: record.id,
     steamId: record.steamId,
@@ -190,7 +198,6 @@ function restorePayload(record, currentPlayer, webMutations = null, webDiet = nu
     skinCode: snapshot.skin?.skin_code || snapshot.skin?.skinCode || snapshot.skin || "",
     dietJson: JSON.stringify(finalDiet),
     vitaminsJson: JSON.stringify(snapshot.vitamins || {}),
-    // Esto arma el array infinito sin importar el límite vanilla de 3
     mutationsJson: JSON.stringify(finalMutations),
     snapshotJson: JSON.stringify(snapshot),
   };
@@ -291,7 +298,6 @@ async function reuseSave(params = {}, deps = {}) {
     throw new Error(`Solo puedes reutilizar antes del ${Math.round(max * 100)}% de growth.`);
   }
 
-  // 🚀 EXTRAE LAS MUTACIONES Y DIETA DEL MENSAJERO Y SE LAS PASA A LA FUNCIÓN
   const payload = restorePayload(record, current, params.mutations, params.diet);
   const restoreResult = await deps.restoreDino({
     action: "restore-dino",
