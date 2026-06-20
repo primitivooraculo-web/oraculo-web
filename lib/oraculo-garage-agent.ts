@@ -59,9 +59,15 @@ export async function saveActiveGarageDino(steamId: string) {
   });
 }
 
-export async function reuseGarageDino(steamId: string, saveId: string) {
+// 🚀 LA MAGIA: Ahora el mensajero empaca las mutaciones y la dieta
+export async function reuseGarageDino(
+  steamId: string, 
+  saveId: string, 
+  mutations: string[] = [], 
+  diet: { lipids: number; carbs: number; proteins: number } = { lipids: 0, carbs: 0, proteins: 0 }
+) {
   return agentJson("/api/admin/garage-vault", {
     method: "POST",
-    body: JSON.stringify({ action: "reuse", steamId, saveId }),
+    body: JSON.stringify({ action: "reuse", steamId, saveId, mutations, diet }),
   });
 }

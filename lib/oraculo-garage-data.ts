@@ -13,6 +13,9 @@ type GarageDino = {
   primeElder?: boolean;
   location?: { x: number | null; y: number | null; z: number | null };
   parkedAt?: string | null;
+  // 🚀 LA MAGIA: La bolsa infinita para mutaciones y el registro de la dieta perfecta
+  mutations?: string[];
+  diet?: { lipids: number; carbs: number; proteins: number };
 };
 
 type Wallet = {
@@ -159,6 +162,9 @@ function buildGarageView(data: GarageNativeData, scopeSteamId = "") {
     health: Math.round(percent(dino.health)),
     primeElder: Boolean(dino.primeElder),
     parkedAt: dateLabel(dino.parkedAt),
+    // 🚀 INYECCIÓN AL FRONTEND: Ahora la página web sí recibe las mutaciones y la dieta
+    mutations: Array.isArray(dino.mutations) ? dino.mutations : [],
+    diet: dino.diet || { lipids: 0, carbs: 0, proteins: 0 }
   }));
 
   const walletTotals = scopedWallets.reduce(
